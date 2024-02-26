@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>變色按鈕示例</title>
+    <style>
+        /* CSS 放這裡 */
+        body {
+            background-color: white; /* 初始背景色 */
+        }
+    </style>
+</head>
+<body>
+
+<button id="changeColorBtn">點我變色</button>
+
+<script>
+    // JavaScript 放這裡
+    document.getElementById("changeColorBtn").onclick = function() {
+        if (confirm("確定要變換背景顏色嗎？")) {
+            document.body.style.backgroundColor = "lightblue"; // 點擊OK後變更的背景顏色
+        }
+    };
+</script>
+
+</body>
+</html>
